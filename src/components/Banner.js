@@ -56,8 +56,9 @@ export const Banner = () => {
                                        começei a estudar desenvolvimento de software em 10/2019, Desenvolvedor a mais de 4 anos,
                                        atuei na empresa Sicaf Sistemas por 2 anos e 6 meses desenvolvendo softwares do 0 e dando manutenção, adquirindo
                                        assim experiência em projetos Web, Mobile e Desktop, Atualmente estou atuando no Grupo Diságua.
-                                       minhas tecnologias favoritas para desenvolver são
-                                       Flutter, React e Express ❤, meus hobbies são jogar e fazer apps mobile.</p>
+                                       Sou sócio em uma empresa chamada ConnSoft que foi fundada em 2023. 
+                                       minhas tecnologias favoritas para desenvolver são Flutter, React e Express ❤,
+                                       meus hobbies são jogar e fazer apps mobile.</p>
                                 </div>}
                         </TrackVisibility>
                 </Row>
