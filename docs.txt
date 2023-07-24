@@ -1,0 +1,11 @@
+°°° Documentation of personal_portfolio project °°°
+
+° Statics: 
+    - number of lines: xxxx
+
+° To make
+    - Add images of frameworks and idioms in habilidades section
+    - Remove projects section temporaly
+    - Integrate in my personal e-mail in contact section
+    - Update facebook icon for github icon
+    - Update to better patterns in project
