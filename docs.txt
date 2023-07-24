@@ -5,3 +5,4 @@
 
 ° To make
     - Integrate in my personal e-mail in contact section
+    - Make more responsive for mobiles devices
