@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react"
-import { Container, Row, Col } from "react-bootstrap"
-import headerImg from "../assets/img/header-img.svg"
-import { ArrowRightCircle } from 'react-bootstrap-icons'
-import 'animate.css'
+import { Container, Row } from "react-bootstrap"
 import TrackVisibility from 'react-on-screen'
+import 'animate.css'
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0)
@@ -12,7 +10,7 @@ export const Banner = () => {
     const [delta, setDelta] = useState(300 - Math.random() * 100)
     const [index, setIndex] = useState(1)
     const toRotate = ["Dev full-stack", "Apaixonado em tecnologia"]
-    const period = 2000
+    const period = 1000
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -39,7 +37,7 @@ export const Banner = () => {
             setIsDeleting(false)
             setLoopNum(loopNum + 1)
             setIndex(1)
-            setDelta(500)
+            setDelta(250)
         } else {
             setIndex(prevIndex => prevIndex + 1)
         }
@@ -49,29 +47,19 @@ export const Banner = () => {
         <section className="banner" id="home">
             <Container>
                 <Row className="aligh-items-center">
-                    <Col xs={12} md={6} xl={7}>
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Bem vindo ao meu portfólio!</span>
-                                    <h1 className="tittle-apresentation">{`Olá! Me chamo Gheysiell,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Desenvolvedor full-stack", "Apaixonado por tecnologia" ]'><span className="wrap">{text}</span></span></h1>
-                                    <p>Sou Gheysiell Santana, 19 anos, desenvolvedor full-stack javaScript,
-                                       começei a estudar desenvolvimento de software em 10/2019, Desenvolvedor a mais de 3 anos,
-                                       atuei na empresa Sicaf Sistemas por 2 anos e 6 meses, ganhando assim,
-                                       experiência em projetos Desktop, Mobile e Web, minhas tecnologias favoritas para desenvolver são:
-                                       React, Express e React-native ❤, meus hobbies são: PUBG Mobile e andar de bike.</p>
-                                    <button onClick={() => console.log('connect')}>Entrar em contato <ArrowRightCircle size={25} /></button>
+                                    <h1 className="tittle-apresentation">{`Olá! Me chamo Gheysiell,`} <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Desenvolvedor full-stack", "Apaixonado por tecnologia" ]'><span className="wrap">{text}</span></span></h1>
+                                    <p>Sou Gheysiell Santana, tenho 20 anos, desenvolvedor Full Stack,
+                                       começei a estudar desenvolvimento de software em 10/2019, Desenvolvedor a mais de 4 anos,
+                                       atuei na empresa Sicaf Sistemas por 2 anos e 6 meses desenvolvendo softwares do 0 e dando manutenção, adquirindo
+                                       assim experiência em projetos Web, Mobile e Desktop, Atualmente estou atuando no Grupo Diságua.
+                                       minhas tecnologias favoritas para desenvolver são
+                                       Flutter, React e Express ❤, meus hobbies são jogar e fazer apps mobile.</p>
                                 </div>}
                         </TrackVisibility>
-                    </Col>
-                    <Col xs={12} md={6} xl={5}>
-                        <TrackVisibility>
-                            {({ isVisible }) =>
-                                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                                    <img src={headerImg} alt="Header Img" />
-                                </div>}
-                        </TrackVisibility>
-                    </Col>
                 </Row>
             </Container>
         </section>
